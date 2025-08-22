@@ -11,7 +11,11 @@ cv2.imshow('part', part)
 b, g, r = cv2.split(img)
 print(b.shape)
 
-cv2.imshow('b', b)
+# 只保留 R
+cur_img = img.copy()
+cur_img[:,:,0] = 0
+cur_img[:,:,1] = 0
+cv2.imshow('R', cur_img)
 
 
 if cv2.waitKey(10_000) & 0xFF == 27:

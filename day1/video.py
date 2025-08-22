@@ -16,7 +16,7 @@ while open:
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         cv2.imshow('result', gray)
         # 每帧等待时间
-        if cv2.waitKey(100) & 0xFF == 27: # 退出键
+        if cv2.waitKey(100) & 0xFF == 27: # 在 虚拟机上，而不是控制台，退出键 ESC
             break
 vc.release()
 cv2.destroyAllWindows()
