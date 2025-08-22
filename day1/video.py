@@ -1,7 +1,7 @@
 import cv2
 import numpy as py
 
-vc = cv2.VideoCapture("./assets/dual-arm.mp4")
+vc = cv2.VideoCapture("./assets/test.mp4")
 
 if vc.isOpened():
     open, frame = vc.read()
